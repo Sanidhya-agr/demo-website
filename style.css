@@ -1,116 +1,96 @@
 /* General Body Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Amazon Ember", Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #EAEDED;
+    color: #0F1111;
 }
 
 /* Main Container */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 /* Header Styles */
 h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    border-bottom: 3px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0F1111;
+    margin-bottom: 25px;
 }
 
-/* Product Card Styles for the main page */
-.product-list {
-    margin-top: 30px;
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
 }
 
+/* Individual Product Card */
 .product-card {
-    border: 1px solid #e9ecef;
+    background-color: #FFFFFF;
     border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.product-card h2 {
-    margin-top: 0;
-    color: #343a40;
+/* Product Image */
+.product-image {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.product-card a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #007bff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.product-card a:hover {
-    background-color: #0056b3;
-}
-
-/* Product Page Specific Styles */
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.product-images img {
+.product-image img {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    height: 200px;
+    object-fit: contain;
 }
 
+/* Product Title */
+.product-title {
+    font-size: 16px;
+    color: #007185;
+    text-decoration: none;
+    line-height: 1.4;
+    height: 65px; /* Fixed height for alignment */
+    overflow: hidden;
+}
+
+.product-title:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+/* Star Ratings */
+.star-rating {
+    color: #FFA41C;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Price */
 .price {
-    font-size: 2em;
-    color: #c0392b;
-    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0F1111;
+    margin-top: 10px;
 }
 
-.details-section {
-    margin-top: 40px;
-    border-top: 1px solid #e9ecef;
-    padding-top: 20px;
-}
-
-.details-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.details-section li {
-    padding: 12px 0;
-    border-bottom: 1px solid #f1f3f5;
-    display: flex;
-}
-
-.details-section li strong {
-    min-width: 220px;
-    color: #495057;
-}
-
-.violation {
-    color: #e74c3c;
-    font-weight: bold;
-    background-color: #fbeae9;
-    padding: 2px 6px;
-    border-radius: 4px;
+.price .mrp {
+    font-size: 12px;
+    color: #565959;
+    text-decoration: line-through;
+    margin-left: 5px;
 }
