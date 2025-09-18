@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demo Category Page</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .product-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
-        .product-card h2 { margin-top: 0; }
-        .product-card a { text-decoration: none; color: #007bff; font-weight: bold; }
-    </style>
+    <title>Demo E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Our Products</h1>
         <div class="product-list">
             <div class="product-card">
-                <h2>Organic Chia Seeds (Mostly Compliant)</h2>
-                <p>A healthy and organic product with most compliance details filled in correctly.</p>
+                <h2>Gourmet Himalayan Salt (Non-Compliant)</h2>
+                <p>An imported salt product with several compliance issues to demonstrate violation detection.</p>
+                <a href="product_salt.html">View Product</a>
+            </div>
+            <div class="product-card">
+                <h2>Organic Chia Seeds (Compliant)</h2>
+                <p>A healthy and organic product with all compliance details filled in correctly to show a high score.</p>
                 <a href="product_compliant.html">View Product</a>
             </div>
             <div class="product-card">
-                <h2>Instant Coffee (Non-Compliant)</h2>
-                <p>This product is missing most of its required legal declarations.</p>
+                <h2>Instant Coffee (Highly Non-Compliant)</h2>
+                <p>This product is missing almost all required legal declarations to demonstrate a very low score.</p>
                 <a href="product_violations.html">View Product</a>
             </div>
         </div>
     </div>
 </body>
 </html>
-
